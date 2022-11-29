@@ -4,9 +4,12 @@
 # Пример:
 # - A (3,6); B (2,1) -> 5,09
 # - A (7,-5); B (1,-1) -> 7,21
+import math
 
+a_x = int(input('Введите X для точки A: '))
+a_y = int(input('Введите Y для точки A: '))
+b_x = int(input('Введите X для точки B: '))
+b_y = int(input('Введите Y для точки B: '))
 
-a_x = float(input('Введите X для точки A: '))
-a_y = float(input('Введите Y для точки A: '))
-b_x = float(input('Введите X для точки B: '))
-b_y = float(input('Введите Y для точки B: '))
+distance = ((a_x - b_x) * (a_x - b_x) + (a_y - b_y) * (a_y - b_y)) ** 0.5
+print(round(distance, 2))
